@@ -22,7 +22,6 @@ function gerarAleatoriosOtimizadoComSet(qtd = 6, max = 60) {
   return Array.from(numerosAleatorios);
 }
 
-// Função para medir o tempo médio de várias execuções
 function tempoExecucaoMedio(funcao, qtdExecucoes = 100, qtdNumeros = 50) {
   let totalTempo = 0;
 
@@ -36,7 +35,7 @@ function tempoExecucaoMedio(funcao, qtdExecucoes = 100, qtdNumeros = 50) {
   return totalTempo / qtdExecucoes;
 }
 
-// Executar a função várias vezes para obter a média
+// Obtendo a média com 1000 execucoes
 const execucoes = 1000;
 const tempoOriginalMedio = tempoExecucaoMedio(
   gerarAleatoriosOriginal,
